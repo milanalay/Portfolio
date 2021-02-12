@@ -26,7 +26,7 @@ SECRET_KEY = 'q(^5#w_l6e^^3zk8b4dpnajtp=y81ro(o_^kn)5msw(5)28dc_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['milanale.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['milanale.herokuapp.com', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dam1e85e4vj146',
+        'HOST': 'ec2-34-198-31-223.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'yvbzjokjrntkah',
+        'PASSWORD': '7e364cee7f1dbc0429b292fb6c64a0d5611ba99f82523c48ec5b519081a014f3',
     }
 }
 
