@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q(^5#w_l6e^^3zk8b4dpnajtp=y81ro(o_^kn)5msw(5)28dc_'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['milanale.herokuapp.com', '127.0.0.1', '0.0.0.0']
 
@@ -79,11 +80,11 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dam1e85e4vj146',
-        'HOST': 'ec2-34-198-31-223.compute-1.amazonaws.com',
+        'NAME': config('DB_NAME'),
+        'HOST': config('DB_HOST'),
         'PORT': 5432,
-        'USER': 'yvbzjokjrntkah',
-        'PASSWORD': '7e364cee7f1dbc0429b292fb6c64a0d5611ba99f82523c48ec5b519081a014f3',
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
     }
 }
 
@@ -136,8 +137,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'root', 'media')
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'milanale.5818@gmail.com'
-EMAIL_HOST_PASSWORD = 'n0ise0fmetal'
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
