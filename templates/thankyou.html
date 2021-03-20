@@ -2,29 +2,19 @@
 
 
 {% block content %}
-{% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
-
+ <div id="hero" class="hero">
+        <div class="container">
+            <div class="row">
 
 <div class="jumbotron text-center">
   <h1 class="display-3">Thank You!</h1>
   <p class="lead"><strong>I appreciate your trust in me. Your satisfaction is my greatest concern.</strong></p>
-  <hr>
-  <div class="col-sm-4 col-xs-12">
-                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
-                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
-                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
-                </div>
-  <p class="lead">
-    <a class="btn btn-info btn-sm" href="https://bootstrapcreative.com/" role="button">Home</a>
+  
+  <a class="btn btn-info btn-sm" href="{% url 'home_view' %}" role="button">Home</a>
   </p>
 </div>
-
+</div>
+</div>
+</div>
 
 {% endblock content %}

@@ -10,5 +10,9 @@ class ContactMe(models.Model):
 	email = models.EmailField(max_length=100)
 	message = models.TextField()
 
+	class Meta:
+		ordering = ('name',)
+		verbose_name_plural = 'Contact Me'
+		
 	def __str__(self):
 		return self.name

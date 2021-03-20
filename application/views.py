@@ -19,12 +19,12 @@ def home_view(request):
 		try:
 			client = ContactMe.objects.create(name=name, email=email, message=message)
 			client.save()
-			messages.success(request, 'Thankyou, Your message was submitted.')
+			# messages.success(request, 'Thankyou, Your message was submitted.')
 			name = str(name)
 			email_message = str(email_message)
 			
-			send_mail_to_me(name, email_message)
-			return HttpResponseRedirect('{% url "thankyou" %}')
+			# send_mail_to_me(name, email_message)
+			return HttpResponseRedirect('/thankyou')
 		except Exception as e:
 			print(e)
 	else:
