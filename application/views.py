@@ -29,7 +29,7 @@ def home_view(request):
 			print(e)
 	else:
 		None
-	return render_to_response(request, "index.html", {})
+	return render(request, "index.html", {})
 
 
 
