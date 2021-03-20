@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.http.response import HttpResponseRedirect
+from django.shortcuts import render, redirect, render_to_response
 from .models import *
 from django.conf import settings
 from django.core.mail import send_mail
@@ -18,15 +19,17 @@ def home_view(request):
 		try:
 			client = ContactMe.objects.create(name=name, email=email, message=message)
 			client.save()
-
+			# messages.success(request, 'Thankyou, Your message was submitted.')
 			name = str(name)
 			email_message = str(email_message)
 			
 			send_mail_to_me(name, email_message)
-			return redirect('/')
+			return HttpResponseRedirect('{% url "thankyou" %}')
 		except Exception as e:
 			print(e)
-	return render(request, "index.html", {})
+	else:
+		None
+	return render_to_response(request, "index.html", {})
 
 
 
