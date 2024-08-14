@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+    <div id="hero" class="hero">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>Milan Ale</h1>
+                    <div class="page-scroll">
+                        <h3>I'm a <span id="job-title"></span></h3>
+                        <a href="#contact" class="btn btn-fill ">Hire me</a>
+                        <div class="clearfix visible-xxs"></div>
+                        <a href="#portfolio" class="btn btn-border">Explore more</a>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 text-right">
+                    <img src="{% static 'assets/img/milan-alay.png' %}" alt="alex-vidal">
+                </div>
+
+            </div>
+        </div>
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2>About</h2>
+                        <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                        <p>Hello! I'm Milan, a Software Developer, a Network Engineer, an independent, hardworking and self-motivated university graduate who has acquired extensive knowledge in the field through the study of Computer Science and Information Technology at degree level with strong technical skills.
+                             Additionally, I have strengthened my skills in the work environment with more than 3 years of experience involving in the development of web applications. 
+                             My background in software development provides me with a unique perspective on network programming and automation, making me well-suited to tackle complex networking challenges. 
+                             My journey so far has been marked by a passion for learning and overcoming technical challenges, which has equipped me with a strong foundation in problem-solving, critical thinking, and the ability to adapt to new technologies quickly. 
+                             I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+                        <a href="{% static 'assets/files/milan_resume' %}" class="btn btn-fill" target="_blank" download>Download my Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
+
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My Skills</h3>
+                    <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Network Design and Implementation</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Software Development</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Automation and Scripting</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Network Device Management and Analysis</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Cloud Networking</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="60"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Cisco Packet Tracer</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Software-Defined Networking</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Database</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Wireshark</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-skills -->
+
+        <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What i do</h3>
+                        <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/front-end.svg' %}" alt="Front End Developer">
+                            <h4>Network Administration</h4>
+                            <p>Network Configuration and Management, IP Addressing and Subnetting, DHCP, DNS, and NAT Configuration, Routing and Switching (including Cisco-based networks), VLAN Configuration and Management, Network Monitoring and Performance Tuning</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/back-end.svg' %}" alt="Back End Developer">
+                            <h4>Software Development</h4>
+                            <p>Using python frameworks such as Django and coding business logic script, I've provided services for clients, including REST APIs, booking applications, CMS and more.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/ml.svg' %}" alt="Coding">
+                            <h4>Machine Learning</h4>
+                            <p>I have completed machine learning projects during my university studies, where I trained models to detect vulnerable container images, effectively applying machine learning to enhance system security. I am passionate about researching machine learning techniques and integrating them into real-world systems, constantly seeking to push the boundaries of what these technologies can achieve.</p>
+                        </div><!-- /.service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Projects and Certifications</h3>
+                    <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Networking_Basics.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Networking Basics</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem01"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Network_Addressing_and_Basic_Troubleshooting.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Network Addressing</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem02"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/RL.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Reinforcement Learning</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem03"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+                   
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/akalarecondition.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Akala Recondition</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Portfolio-2.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Django + React</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Portfolio-3.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Django User</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.secton-portfolio -->
+
+        <section class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="counter start" data-to="3" data-speed="2000">0</p>
+                        <h4>Years Experience</h4>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="counter start" data-to="10" data-speed="2000">0</p>       
+                        <h4>Projects Completed</h4>      
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
+
+        <section id="contact" class="site-section section-form text-center">
+            <div class="container" id="thankyouMessageDiv">
+
+                <h3>Contact</h3>
+                <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>   
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-border" type="submit">Hire Me <span class="glyphicon glyphicon-send"></span></button>
+                </form>
+            </div>
+        </section><!-- /.section-form -->
+
+        
+
+    </main><!-- /#main -->
+
+
+    <!-- Modals -->
+    <div id="portfolioItem01" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Networking_Basics.jpg' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Networking Basics Cisco Certificate</h4>
+              <p>I have completed the Cisco Networking Basics course, which provided me with a comprehensive understanding of networking concepts, including network protocols, routing, and switching.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.credly.com/badges/de373da1-9625-4220-9d9a-b7f298f75faf/linked_in_profile" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem02" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Network_Addressing_and_Basic_Troubleshooting.jpg' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Network Addressing and Basic Troubleshooting Cisco Certificate</h4>
+              <p>Taking this course on network addressing and basic troubleshooting, equipped me with the skills to effectively configure and diagnose network issues.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.credly.com/badges/537cac52-8ee1-4add-ad2c-6e54be071b29/linked_in_profile" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem03" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/RL.png' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Mitigating Image Containers Poisoning Attacks using Reinforcement Learning</h4>
+              <p>This project was built as one of my university project. A Reinforcement Learning was built and trained to identify the most vulnerable image containers based on the attributes of the containers. Then, the trained model was implemented with a test data that separated the top high risk containers based on the reward values.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/milanalay/Reinforcement-Learning-Model" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="{% static 'assets/img/akalarecondition.png' %}" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Akala Recondition Data Management Web App</h4>
+            <p>Akala Recondition is one of the renowned service center that delivers the space for customers to buy, sell or exchange the used two-wheelers instantly. This app provides the ability for customers to book their choosen product as well as an easy to use dashboard for the admin to manage data.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/milanalay/AkalaRecondition" class="btn btn-fill">Visit Page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="{% static 'assets/img/portfolio-2.jpg' %}" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">An Ecommerce Application Built with Django and React</h4>
+            <p>This is a simple ecommerce web application based on Django Backend and ReactJs Frontend built as an integration project.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/milanalay/Django-React" class="btn btn-fill">Visit Page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="{% static 'assets/img/portfolio-3.jpg' %}" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Reusable User Component</h4>
+            <p>This is a project that can be reused as a customized user component for all the django web applications if you don't want to use the built-in user authentication and authorization.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/milanalay/Django-User" class="btn btn-fill">Visit Page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    
+
+
+    
+
+{% endblock content %}
+
+
+
