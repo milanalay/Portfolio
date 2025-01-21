@@ -1,0 +1,494 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+    <div id="hero" class="hero">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>Network Engineer</h1>
+                    <div class="page-scroll">
+                        <p>Proficient in various networking and security technologies, including TCP/IP protocol suite, routing & switching, enacting network security measures, network traffic analysis, monitoring & reporting, LAN/WAN, WLAN, VPN, and firewall configuration. 
+                            I am proficient in system administration using Microsoft Windows Servers and also have a vast knowledge of multiple operating systems including Windows, Linux, and MacOS.
+                            <!-- <span id="job-title"></span> -->
+                        </p>
+                        <a href="#contact" class="btn btn-fill ">Hire me</a>
+                        <div class="clearfix visible-xxs"></div>
+                        <a href="#portfolio" class="btn btn-border">Explore more</a>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 text-right">
+                    <img src="{% static 'assets/img/milan-alay.png' %}" alt="alex-vidal">
+                </div>
+
+            </div>
+        </div>
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2>About</h2>
+                        <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                        <p>Hello! I'm Milan, a Programmer, a Network Engineer, an independent, hardworking and self-motivated university graduate who has acquired extensive knowledge in the field through the study of Computer Science and Information Technology, projects and self-driven learning.
+                             Additionally, I have strengthened my skills in the work environment with more than 3 years of experience involving in the development of web applications. 
+                             My background in software development provides me with a unique perspective on network programming and automation, making me well-suited to tackle complex networking challenges. 
+                             My journey so far has been marked by a passion for learning and overcoming technical challenges, which has equipped me with a strong foundation in problem-solving, critical thinking, and the ability to adapt to new technologies quickly. 
+                             I thrive in challenging environments and stay ahead by continuously learning emerging technologies to meet the ever-evolving needs of the IT landscape. 
+                             Whether you’re looking for an IT support specialist, a network administrator, or someone to fortify your organization’s security posture, I’m here to help your systems operate at their best. 
+                             Let’s work together to create resilient, efficient, and secure IT solutions that drive success!
+                             Let’s connect and explore how I can bring value to your organization.</p>
+                        <a href="{% static 'assets/files/milan_resume' %}" class="btn btn-fill" target="_blank" download>Download my Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
+
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My Skills</h3>
+                    <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Network Design and Implementation</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Software Development</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Automation and Scripting</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Network Device Management and Analysis</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Cloud Networking</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="60"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Cisco Packet Tracer</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Software-Defined Networking</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>GNS3</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Wireshark</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-skills -->
+
+        <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What i do</h3>
+                        <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/front-end.svg' %}" alt="Front End Developer">
+                            <h4>Network Administration</h4>
+                            <p>Network Configuration and Management, IP Addressing and Subnetting, DHCP, DNS, and NAT Configuration, Routing and Switching (including Cisco-based networks), VLAN Configuration and Management, Network Monitoring and Performance Tuning</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/back-end.svg' %}" alt="Back End Developer">
+                            <h4>Software Development</h4>
+                            <p>Skilled in Python frameworks like Django and MERN stack, I specialize in creating efficient solutions, including REST APIs, automations and more, tailored to meet client needs.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="{% static 'assets/img/ml.svg' %}" alt="Coding">
+                            <h4>Machine Learning</h4>
+                            <p>My passion for innovation extends to the field of Software-Defined Networking (SDN), where I’ve developed a deep reinforcement learning model to optimize routing decisions. 
+                                This model improved Quality of Service (QoS) by efficiently balancing server loads and enhancing energy efficiency.
+                            </p>
+                            </div><!-- /.service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Projects</h3>
+                    <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Project-7.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Hospital System Network Design</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem06"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Project-6.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Business System Network Design</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem05"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Project-5.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Bank System Network Design</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem04"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+                   
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/DRL-SDN.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>DRL Approach for SDN</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem03"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/akalarecondition.png' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Akala Recondition</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem02"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Portfolio-3.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Django User</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem01"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.secton-projects -->
+
+        <section id="certification" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Certifications</h3>
+                    <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Networking_Basics.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Networking Basics</h4>
+                                <a href="#" data-toggle="modal" data-target="#certificate01"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/Network_Addressing_and_Basic_Troubleshooting.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Network Addressing</h4>
+                                <a href="#" data-toggle="modal" data-target="#certificate02"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <img src="{% static 'assets/img/view.jpg' %}" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4></h4>
+                                <a href="#" data-toggle="modal" data-target="#certificate3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <!-- <a href="#"><span class="glyphicon glyphicon-link">cwas</span></a> -->
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+                   
+            </div>
+        </section><!-- /.secton-certifications -->
+
+        <section class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="counter start" data-to="3" data-speed="2000">0</p>
+                        <h4>Years Experience</h4>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="counter start" data-to="10" data-speed="2000">0</p>       
+                        <h4>Projects Completed</h4>      
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
+
+        <section id="contact" class="site-section section-form text-center">
+            <div class="container" id="thankyouMessageDiv">
+
+                <h3>Contact</h3>
+                <img src="{% static 'assets/img/lines.svg' %}" class="img-lines" alt="lines">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>   
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-border" type="submit">Hire Me <span class="glyphicon glyphicon-send"></span></button>
+                </form>
+            </div>
+        </section><!-- /.section-form -->
+
+        
+
+    </main><!-- /#main -->
+
+
+    <!-- Modals -->
+    <!-- For Projects -->
+    <div id="portfolioItem06" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Project-7.png' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Hospital System Network Design</h4>
+              <p>Designed and implemented a redundant hierarchical network using Cisco Packet Tracer, connecting HQ and Branch sites with serial links. 
+                The network includes core routers, multilayer switches, and access switches, with VLANs and dynamic IP allocation via DHCP for departmental segmentation. 
+                Configured inter-VLAN routing, OSPF, static routing, and WLANs for seamless communication and scalability. 
+                Security features such as SSH, port security, IPSec VPN, and ACLs were implemented to ensure secure operations, while NAT overload facilitated internet access. 
+                The network was thoroughly tested to ensure optimal performance, connectivity, and compliance with design objectives.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/milanalay/Cisco-Packet-Tracer-Lab-Projects/tree/main/Project_7_Hospital_System_Network" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem05" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Project-6.png' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Business System Network Design</h4>
+              <p>Designed and implemented a redundant hierarchical network in Cisco Packet Tracer, incorporating two routers and two multilayer switches at each layer for redundancy, with connectivity to two ISPs. 
+                The network utilized VLANs for departmental segmentation, inter-VLAN routing on multilayer switches, and dynamic IP allocation via DHCP, with static IPs for server devices. 
+                Configurations included subnetting, OSPF routing, SSH for secure remote access, and port security in the Finance and Accounts department using sticky MAC and violation mode shutdown. 
+                Implemented NAT overload for internet access and ACLs for traffic control, along with WLANs for departmental wireless connectivity. 
+                The network was thoroughly tested to ensure seamless communication, optimal performance, and robust security while adhering to design requirements.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/milanalay/Cisco-Packet-Tracer-Lab-Projects/tree/main/Project_6_Company%3ABusiness%20System%20Network" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem04" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Project-5.png' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Bank System Network Design</h4>
+              <p>Designed and implemented a hierarchical network topology using Cisco Packet Tracer, incorporating VLAN-based segmentation with subnetting and inter-VLAN routing for seamless communication between departments. 
+                The network included wired and wireless connectivity for approximately 60 users per department, dynamic IP allocation via DHCP servers, and static IP configuration for servers. 
+                Configured OSPF for route advertisement, SSH for secure remote access, and port security using sticky MAC with violation mode shutdown. 
+                End devices and servers were integrated with HTTP and email services. Basic device configurations, including hostnames, encrypted passwords, and banner messages, were applied, and domain IP lookup was disabled. 
+                Subnetting of the base address 192.168.10.0 was performed to allocate appropriate address ranges to each department. 
+                The network design was rigorously tested to ensure optimal performance, security, and communication across all devices.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/milanalay/Cisco-Packet-Tracer-Lab-Projects/tree/main/Project_5_Bank_System_Network" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem03" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/DRL-SDN.png' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">A Deep Reinforcement Learning Approach for Software-Defined Networking</h4>
+              <p>Developed an innovative AI-driven routing solution using Python and PyTorch, processing 1M+ data packets with over 90% routing accuracy. 
+                Achieved 45% improvement in server utilization through intelligent load balancing algorithms. 
+                Key achievement: Published findings in university research paper, demonstrating practical application of AI in network optimization.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/milanalay/DRL_SDN" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem02" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="{% static 'assets/img/akalarecondition.png' %}" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Akala Recondition Data Management Web App</h4>
+            <p>Akala Recondition is one of the renowned service center that delivers the space for customers to buy, sell or exchange the used two-wheelers instantly. This app provides the ability for customers to book their choosen product as well as an easy to use dashboard for the admin to manage data.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/milanalay/AkalaRecondition" class="btn btn-fill">Visit Page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem01" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="{% static 'assets/img/portfolio-3.jpg' %}" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Reusable User Component</h4>
+            <p>This is a project that can be reused as a customized user component for all the django web applications if you don't want to use the built-in user authentication and authorization.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/milanalay/Django-User" class="btn btn-fill">Visit Page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- For Certifications -->
+    <div id="certificate01" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Networking_Basics.jpg' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Networking Basics Cisco Certificate</h4>
+              <p>I have completed the Cisco Networking Basics course, which provided me with a comprehensive understanding of networking concepts, including network protocols, routing, and switching.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.credly.com/badges/de373da1-9625-4220-9d9a-b7f298f75faf/linked_in_profile" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="certificate02" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="{% static 'assets/img/Network_Addressing_and_Basic_Troubleshooting.jpg' %}" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Network Addressing and Basic Troubleshooting Cisco Certificate</h4>
+              <p>Taking this course on network addressing and basic troubleshooting, equipped me with the skills to effectively configure and diagnose network issues.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.credly.com/badges/537cac52-8ee1-4add-ad2c-6e54be071b29/linked_in_profile" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    
+
+{% endblock content %}
+
+
+
